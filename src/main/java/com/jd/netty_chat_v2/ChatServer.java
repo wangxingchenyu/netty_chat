@@ -1,4 +1,4 @@
-package com.jd.netty_chat;
+package com.jd.netty_chat_v2;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;

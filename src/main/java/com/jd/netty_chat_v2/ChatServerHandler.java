@@ -1,4 +1,4 @@
-package com.jd.netty_chat;
+package com.jd.netty_chat_v2;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
@@ -34,7 +34,6 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<String> {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-
         Channel channel = ctx.channel();
         channels.add(channel);
         String ip = channel.remoteAddress().toString().substring(1);
