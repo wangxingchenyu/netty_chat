@@ -36,15 +36,16 @@ public class ChatRoomClient {
 
     public void readMessage() { // 提示不要显示创建线程，建议用线程池，暂时忽略
         new Thread(() -> {
-            while (true){
+            while (true) {
                 try {
+                    // 判断是否有事件产生 accept,read,write
                     int select = selector.select(2000);
-                    if (select > 0){
+                    if (select > 0) {
                         Set<SelectionKey> selectionKeys = selector.selectedKeys();
                         Iterator<SelectionKey> iterator = selectionKeys.iterator();
-                        while (iterator.hasNext()){
-                            SelectionKey key= iterator.next();
-                            SocketChannel channel = (SocketChannel)key.channel();
+                        while (iterator.hasNext()) {
+                            SelectionKey key = iterator.next();
+                            SocketChannel channel = (SocketChannel) key.channel();
                             ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
                             channel.read(byteBuffer);
                             System.out.println(new String(byteBuffer.array()));
