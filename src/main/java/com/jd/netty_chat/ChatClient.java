@@ -48,6 +48,7 @@ public class ChatClient {
                     });
             // 执行连接操作,自身连接的Channel
             ChannelFuture cf = bootstrap.connect(host, port).sync();
+
             Channel channel = cf.channel();
             System.out.println("-------" + channel.localAddress().toString().substring(1) + "-----------");
             Scanner scanner = new Scanner(System.in);

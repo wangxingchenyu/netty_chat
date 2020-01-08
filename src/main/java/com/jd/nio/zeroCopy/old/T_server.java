@@ -19,7 +19,7 @@ public class T_server {
 
             DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
 
-            FileOutputStream fileOutputStream = new FileOutputStream("d:/maven1.zip");
+            FileOutputStream fileOutputStream = new FileOutputStream("d:/maven11.zip");
 
             try {
                 byte[] buffer = new byte[4096];

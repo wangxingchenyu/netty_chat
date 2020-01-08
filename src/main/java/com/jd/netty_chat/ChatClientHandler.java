@@ -11,6 +11,7 @@ import io.netty.channel.SimpleChannelInboundHandler;
 public class ChatClientHandler extends SimpleChannelInboundHandler<String> {
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, String s) throws Exception {
+        // 只执行读取数据
         System.out.println("执行了接收...........");
         System.out.println(s.trim());
     }

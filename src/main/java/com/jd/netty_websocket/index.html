@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WebSocket聊天室</title>
+
+</head>
+<body>
+
+<div class="main">
+    <h2 id="online">在线数量:</h2>
+    <div class="chatRecorder">
+        <div id="left"></div>
+        <div id="right" style="text-align: right;color: chocolate;"></div>
+    </div>
+    <textarea class="chatWindow" style="width: 100%;height:60px;border: 1px solid #dcdfe6;resize: none"></textarea>
+    <br/>
+    <button onclick="WebSocketTest()">发送消息</button>
+    <button>清空记录</button>
+</div>
+
+<script>
+
+    ws = null;
+    if ("WebSocket" in window) {
+        console.log("您的浏览器支持 WebSocket!");
+        // 打开一个 web socket
+        ws = new WebSocket("ws://localhost:9999/hello");
+
+        // ws.onopen = function () {
+        //     // // Web Socket 已连接上，使用 send() 方法发送数据
+        //     // var value = document.getElementsByClassName("chatWindow")[0].value;
+        //     // ws.send(value);
+        //     console.info("数据发送中...");
+        // };
+
+        ws.onmessage = function (evt) { //监听数据
+            var received_msg = evt.data;
+            var ptag = document.createElement("p");
+            ptag.innerText = received_msg;
+            if (String(received_msg).includes("我自己")) {
+                document.getElementById("right").appendChild(ptag);
+            } else {
+                document.getElementById("left").appendChild(ptag);
+            }
+            document.getElementById("online").innerHTML= received_msg;
+            console.info("数据已接收...", received_msg);
+        };
+
+        ws.onclose = function () {
+            // 关闭 websocket
+            console.info("连接已关闭...");
+        };
+    } else {
+        // 浏览器不支持 WebSocket
+        alert("您的浏览器不支持 WebSocket!");
+    }
+
+    function WebSocketTest() {
+        // 发送信息
+        var value = document.getElementsByClassName("chatWindow")[0].value;
+        ws.send(value);
+        document.getElementsByClassName("chatWindow")[0].value = "";
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.jd.nio;
+package com.jd.nio.t_buffer;
 
 import java.nio.IntBuffer;
 

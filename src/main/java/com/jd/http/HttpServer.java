@@ -1,12 +1,11 @@
-package com.jd.netty_chat_v2;
+package com.jd.http;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.*;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelOption;
+import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.string.StringDecoder;
-import io.netty.handler.codec.string.StringEncoder;
 
 /**
  * @Author: zhilei.wang
@@ -14,35 +13,27 @@ import io.netty.handler.codec.string.StringEncoder;
  * @Version 1.0
  * Netty 网络框架
  */
-public class ChatServer {
+public class HttpServer {
     int port;
 
-    public ChatServer(int port) {
+    public HttpServer(int port) {
         this.port = port;
     }
 
     public static void main(String[] args) {
-        new ChatServer(9999).run();
+        new HttpServer(9999).run();
     }
 
     public void run() {
-        EventLoopGroup boosgroup = new NioEventLoopGroup(100);
-        EventLoopGroup workergroup = new NioEventLoopGroup(100);
+        EventLoopGroup boosgroup = new NioEventLoopGroup();
+        EventLoopGroup workergroup = new NioEventLoopGroup();
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(boosgroup, workergroup)
                     .channel(NioServerSocketChannel.class)
                     .option(ChannelOption.SO_BACKLOG, 128)
                     .childOption(ChannelOption.SO_KEEPALIVE, true)
-                    .childHandler(new ChannelInitializer<SocketChannel>() {
-                        @Override
-                        protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            ChannelPipeline pipeline = socketChannel.pipeline();
-                            pipeline.addLast("decoder", new StringDecoder());
-                            pipeline.addLast("encoder", new StringEncoder());
-                            pipeline.addLast(new ChatServerHandler());
-                        }
-                    });
+                    .childHandler(new T_channelInitializer());
             System.out.println("Netty Chat Server 启动.....");
             ChannelFuture f = b.bind(port).sync();
             f.channel().closeFuture().sync();

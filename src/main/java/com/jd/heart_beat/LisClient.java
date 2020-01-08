@@ -1,4 +1,4 @@
-package com.jd.netty_chat_v2;
+package com.jd.heart_beat;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
@@ -18,17 +18,17 @@ import java.util.Scanner;
  * @Date: 2019/12/23 16:24
  * @Version 1.0
  */
-public class ChatClient {
+public class LisClient {
     private String host;
     private int port;
 
-    public ChatClient(String host, int port) {
+    public LisClient(String host, int port) {
         this.host = host;
         this.port = port;
     }
 
     public static void main(String[] args) {
-        new ChatClient("localhost", 9999).run();
+        new LisClient("localhost", 9999).run();
     }
 
     public void run() {
@@ -43,11 +43,12 @@ public class ChatClient {
                             ChannelPipeline pipeline = socketChannel.pipeline();
                             pipeline.addLast("decoder", new StringDecoder());  // 解码
                             pipeline.addLast("encoder", new StringEncoder());  // 编码
-                            pipeline.addLast(new ChatClientHandler());
+                            pipeline.addLast(new LisClientHandler());
                         }
                     });
             // 执行连接操作,自身连接的Channel
             ChannelFuture cf = bootstrap.connect(host, port).sync();
+
             Channel channel = cf.channel();
             System.out.println("-------" + channel.localAddress().toString().substring(1) + "-----------");
             Scanner scanner = new Scanner(System.in);
