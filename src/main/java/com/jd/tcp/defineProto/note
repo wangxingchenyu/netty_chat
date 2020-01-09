@@ -1,0 +1,12 @@
+1）自定义的协议
+
+Netty 自带解决方案:
+LineBasedFrameDecoder        以行尾的分割符 \r或者\n
+DelimiterBasedFrameDecoder   以自定义的分割符来解码
+FixedLengthFrameDecoder      确定固定的长度来读取数据，如果不满足长度,那么就会等待下一个消息到达后进行补足
+HttpObjectEncoder/Decoder    根据http消息结构来编解码
+LengthFieldBasedFrameDecoder 根据指定的消息包的长度来分割消息包，这样可以自动处理粘包与拆包的问题
+
+
+
+

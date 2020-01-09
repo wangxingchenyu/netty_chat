@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d40feb0a-fa0a-4b2c-a0d9-cea2e055baaf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/MyLongDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/MyLongEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/T_Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/T_ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/T_Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/T_ServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/cc/MyLCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/t_1/MyLongDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/t_1/MyLongEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/t_1/T_Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/t_1/T_ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/t_1/T_Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/codec/t_1/T_ServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoBuf/User.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoSuffer/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoSuffer/ProtostuffUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoSuffer/T_p.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoSuffer/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/bin/protoc.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/any.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/api.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/compiler/plugin.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/descriptor.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/duration.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/empty.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/field_mask.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/source_context.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/struct.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/timestamp.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/type.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/include/google/protobuf/wrappers.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/protoc-3.11.2-win64/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/T_TcpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/T_TcpClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/T_TcpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/T_TcpServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/bondingPackage/T_TcpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/bondingPackage/T_TcpClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/bondingPackage/T_TcpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/bondingPackage/T_TcpServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/defineProto/MessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/defineProto/MessageEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/defineProto/MessageProtocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jd/tcp/defineProto/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jd/netty_chat/ChatServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jd/netty_chat/ChatServerHandler.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="docker-23.144" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="docker-23.144" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="docker-23.144" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="new_irm: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="docker-23.144" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="new_irm: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideInfoMessages" value="true" />
+    <option name="HIDE_INFO_MESSAGES" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="GuiceNewModule" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/jd/nio/chatRoom/ChatRoomServer.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\java_demo\netty_chat\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/java/apache-maven-3.6.0-bin/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.0-bin\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1VPnslpZcc0ZdLgXdxPKOQMjakm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="compactDirectories" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/jd/codec/t_1" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jd.netty_websocket" />
+      <recent name="com.jd.nio" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java_demo\netty_chat\src\main\java\com\jd\codec\t_1" />
+      <recent name="D:\java_demo\netty_chat\src\main\java\com\jd\tcp\bondingPackage" />
+      <recent name="D:\java_demo\netty_chat\src\main\java\com\jd\tcp" />
+      <recent name="D:\java_demo\netty_chat\src\main\java\com\jd" />
+      <recent name="D:\java_demo\netty_chat\src\main\java\com\jd\netty_websocket" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.T_TcpClient">
+    <configuration name="T_Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jd.codec.T_Client" />
+      <module name="netty_chat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jd.codec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T_Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jd.codec.T_Server" />
+      <module name="netty_chat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jd.codec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T_TcpClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jd.tcp.T_TcpClient" />
+      <module name="netty_chat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jd.tcp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T_TcpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jd.tcp.T_TcpServer" />
+      <module name="netty_chat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jd.tcp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.T_Server" />
+      <item itemvalue="Application.T_Client" />
+      <item itemvalue="Application.T_TcpServer" />
+      <item itemvalue="Application.T_TcpClient" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.T_TcpClient" />
+        <item itemvalue="Application.T_TcpServer" />
+        <item itemvalue="Application.T_Client" />
+        <item itemvalue="Application.T_Server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d40feb0a-fa0a-4b2c-a0d9-cea2e055baaf" name="Default Changelist" comment="" />
+      <created>1577163806638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577163806638</updated>
+      <workItem from="1577163809728" duration="11476000" />
+      <workItem from="1577182654731" duration="2057000" />
+      <workItem from="1577667747844" duration="1123000" />
+      <workItem from="1577668897532" duration="8167000" />
+      <workItem from="1577754918683" duration="20000" />
+      <workItem from="1577758737987" duration="4338000" />
+      <workItem from="1577930004714" duration="44614000" />
+      <workItem from="1578273240789" duration="724000" />
+      <workItem from="1578274041921" duration="550000" />
+      <workItem from="1578275180059" duration="1561000" />
+      <workItem from="1578276906630" duration="865000" />
+      <workItem from="1578277788457" duration="1172000" />
+      <workItem from="1578279109571" duration="1991000" />
+      <workItem from="1578281126621" duration="10229000" />
+      <workItem from="1578297639234" duration="5989000" />
+      <workItem from="1578308445279" duration="28372000" />
+      <workItem from="1578452527306" duration="552000" />
+      <workItem from="1578453100364" duration="118000" />
+      <workItem from="1578453245008" duration="245000" />
+      <workItem from="1578453510906" duration="4018000" />
+      <workItem from="1578464152383" duration="18040000" />
+      <workItem from="1578538681542" duration="10993000" />
+    </task>
+    <task id="LOCAL-00001" summary="基于Netty实现的聊天室">
+      <created>1577168353463</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577168353463</updated>
+    </task>
+    <task id="LOCAL-00002" summary="基于Netty实现的聊天室+ NIO基础内容+Nio实现群聊功能">
+      <created>1578022680740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578022680740</updated>
+    </task>
+    <task id="LOCAL-00003" summary="基于Netty实现的聊天室+ NIO基础内容+Nio实现群聊功能">
+      <created>1578043032383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578043032383</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Netty各功能模块Code">
+      <created>1578445390542</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578445390542</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="基于Netty实现的聊天室" />
+    <MESSAGE value="基于Netty实现的聊天室+ NIO基础内容+Nio实现群聊功能" />
+    <MESSAGE value="Netty各功能模块Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Netty各功能模块Code" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="561" y="362" key="#Inspections" timestamp="1578388292009">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="561" y="362" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1578388292009" />
+    <state x="574" y="144" key="#Notifications" timestamp="1578452591134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="574" y="144" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1578452591134" />
+    <state x="530" y="165" key="#Project_Structure" timestamp="1577668392982">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="530" y="165" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577668392982" />
+    <state x="298" y="143" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578536806250">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="298" y="143" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578536806250" />
+    <state x="749" y="280" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578561308790">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="749" y="280" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578561308790" />
+    <state x="621" y="410" width="758" height="584" key="#com.intellij.ide.util.MemberChooser" timestamp="1578546715483">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="621" y="410" width="758" height="584" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578546715483" />
+    <state x="726" y="382" width="431" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578535704140">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="382" width="431" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1578535704140" />
+    <state x="697" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578535058494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="697" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578535058494" />
+    <state x="572" y="117" key="CommitChangelistDialog2" timestamp="1578445383220">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="572" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578445383220" />
+    <state width="790" height="718" key="DebuggerActiveHint" timestamp="1578360409664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="790" height="718" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1578360409664" />
+    <state x="495" y="186" key="FileChooserDialogImpl" timestamp="1578562462755">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="495" y="186" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578562462755" />
+    <state x="792" y="422" width="373" height="205" key="Github.CreateGistDialog" timestamp="1578295229135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="792" y="422" width="373" height="205" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578295229135" />
+    <state width="1807" height="204" key="GridCell.Tab.0.bottom" timestamp="1578561854387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1807" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578561854387" />
+    <state width="1807" height="204" key="GridCell.Tab.0.center" timestamp="1578561854387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1807" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578561854387" />
+    <state width="1807" height="204" key="GridCell.Tab.0.left" timestamp="1578561854387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1807" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578561854387" />
+    <state width="1807" height="204" key="GridCell.Tab.0.right" timestamp="1578561854387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1807" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578561854387" />
+    <state width="1790" height="174" key="GridCell.Tab.1.bottom" timestamp="1578362268786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1790" height="174" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578362268786" />
+    <state width="1790" height="174" key="GridCell.Tab.1.center" timestamp="1578362268786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1790" height="174" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578362268786" />
+    <state width="1790" height="174" key="GridCell.Tab.1.left" timestamp="1578362268786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1790" height="174" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578362268786" />
+    <state width="1790" height="174" key="GridCell.Tab.1.right" timestamp="1578362268786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1790" height="174" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578362268786" />
+    <state width="1790" height="301" key="GridCell.Tab.5.bottom" timestamp="1578360214217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1790" height="301" key="GridCell.Tab.5.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578360214217" />
+    <state width="1790" height="301" key="GridCell.Tab.5.center" timestamp="1578360214217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1790" height="301" key="GridCell.Tab.5.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578360214217" />
+    <state width="1790" height="301" key="GridCell.Tab.5.left" timestamp="1578360214217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1790" height="301" key="GridCell.Tab.5.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578360214217" />
+    <state width="1790" height="301" key="GridCell.Tab.5.right" timestamp="1578360214217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1790" height="301" key="GridCell.Tab.5.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578360214217" />
+    <state x="544" y="375" key="MavenRunHelper.GoalEditor" timestamp="1577668307469">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="544" y="375" key="MavenRunHelper.GoalEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577668307469" />
+    <state x="403" y="133" key="SettingsEditor" timestamp="1578538731130">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="403" y="133" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578538731130" />
+    <state x="681" y="261" width="567" height="524" key="StructurePopup" timestamp="1578473661731">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="261" width="567" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1578473661731" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1578445475559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578445475559" />
+    <state x="647" y="280" width="626" height="480" key="find.popup" timestamp="1578533115450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="647" y="280" width="626" height="480" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578533115450" />
+    <state x="338" y="226" key="new project wizard" timestamp="1577668340615">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="338" y="226" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1577668340615" />
+    <state x="670" y="156" key="refactoring.ChangeSignatureDialog" timestamp="1578302822161">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="156" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578302822161" />
+    <state x="599" y="234" width="672" height="678" key="search.everywhere.popup" timestamp="1578539142339">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="599" y="234" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578539142339" />
+  </component>
+</project>
